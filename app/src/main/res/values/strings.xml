@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AndroidHelper</string>
+    <string name="countdown_text">%s秒后重新获取验证码</string>
+</resources>
