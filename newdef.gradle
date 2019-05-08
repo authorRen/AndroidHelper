@@ -1,0 +1,17 @@
+ext {
+    compileSdkVersion = 28
+    minSdkVersion = 15
+    targetSdkVersion = 28
+    versionCode = 1
+    versionName = "1.0"
+
+    //工具集合类
+    okHttpVersion = '3.6.0'
+
+
+
+    newDep = [
+            //工具集合类
+            okhttp3     :       "com.squareup.okhttp3:okhttp:${okHttpVersion}"
+    ]
+}

@@ -9,14 +9,23 @@ import android.content.Context;
  */
 public class BaseApplication extends Application {
 
+    private static Context mContext;
 
     @Override
     public void onCreate() {
         super.onCreate();
-
+        mContext = getApplicationContext();
     }
 
     public static Context getContext() {
-        return getContext();
+        return mContext;
+    }
+
+    /**
+     * 退出app
+     */
+    public void exitApp() {
+        android.os.Process.killProcess(android.os.Process.myPid());
+        System.exit(0);
     }
 }
